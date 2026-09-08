@@ -27,9 +27,32 @@
             font-size: 1.3rem;
             text-decoration: underline;
         }
-        
+
         a.link-hijau:hover {
-            color: #a8f0c6; /* Efek saat kursor diarahkan ke link */
+            color: #000000; /* Efek saat kursor diarahkan ke link */
+        }
+        /* Pengaturan Tabel */
+        table {
+            margin: 20px auto;        /* Membuat tabel berada tepat di tengah halaman */
+            border-collapse: collapse; /* Menggabungkan garis batas tabel agar rapi */
+            width: 80%;
+            max-width: 450px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid #ffffff; /* Garis tabel berwarna putih */
+            padding: 10px 14px;        /* Jarak di dalam sel tabel */
+        }
+
+        th {
+            background-color: rgba(2, 1, 7, 0.25); /* Latar header sedikit lebih gelap */
+            text-align: center;
+        }
+
+        td.kolom-no {
+            text-align: center;
+            width: 50px;
         }
     </style>
 </head>
@@ -61,18 +84,56 @@
     <div class="kontainer-daftar">
         <p>Di Kampus ini saya juga memiliki banyak teman, namun di antara mereka semua, saya memiliki sahabat yang dekat dengan saya, diantaranya:</p>
 
-        <ol>
-            <li>Brian ndut</li>
-            <li>Novel</li>
-            <li>Niel</li>
-            <li>Ricky</li>
-            <li>Pendow</li>
-            <li>Joseph</li>
-            <li>BIMMAAA</li>
-            <li>Arkan</li>
-            <li>Ardi orkay</li>
-            <li>Bang Sat</li>
-        </ol>
+        <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Sahabat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="kolom-no">1</td>
+                <td>Brian ndut</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">2</td>
+                <td>Novel</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">3</td>
+                <td>Niel</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">4</td>
+                <td>Ricky</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">5</td>
+                <td>Pendow</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">6</td>
+                <td>Joseph</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">7</td>
+                <td>BIMMAAA</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">8</td>
+                <td>Arkan</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">9</td>
+                <td>Ardi orkay</td>
+            </tr>
+            <tr>
+                <td class="kolom-no">10</td>
+                <td>Bang Sat</td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 
     <br>
